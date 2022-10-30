@@ -1,1 +1,0 @@
-NAME = 'super_package'
