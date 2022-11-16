@@ -13,4 +13,4 @@ def rand_tuple(a):
 
   return result
 
-rand_tuple(a)
+rand_tuple(a)kkk
