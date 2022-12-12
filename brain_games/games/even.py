@@ -1,11 +1,11 @@
-from random import randint
+import random
 
 
 QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def game():
-    number = randint(0, 100)
+    number = random.randint(0, 100)
     result = ''
     screen_question = str(number)
     if number % 2 == 0:
