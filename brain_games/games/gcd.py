@@ -5,16 +5,9 @@ QUESTION = 'Find the greatest common divisor of given numbers.'
 
 
 def game():
-    counter = random.choice('235')
-    if counter == '2':
-        num_first = random.randrange(0, 101, 2)
-        num_second = random.randrange(0, 101, 2)
-    elif counter == '3':
-        num_first = random.randrange(0, 101, 3)
-        num_second = random.randrange(0, 101, 3)
-    else:
-        num_first = random.randrange(0, 101, 5)
-        num_second = random.randrange(0, 101, 5)
+    counter = int(random.choice('235'))
+    num_first = random.randrange(0, 101, counter)
+    num_second = random.randrange(0, 101, counter)
     screen_question = (f'{num_first} {num_second}')
     print(screen_question)
     if num_first > num_second:
