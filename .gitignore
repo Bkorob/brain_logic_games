@@ -1,5 +1,6 @@
-<<<<<<< HEAD
+brain_games/__pycache__/
 i.md
-=======
+brain_games/scripts/__pycache__/
 .venv
->>>>>>> b889287 (Подшаг №2 - Создание Makefile)
+dist/
+pyproject.toml
