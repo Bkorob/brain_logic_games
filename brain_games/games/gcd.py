@@ -4,12 +4,13 @@ import random
 QUESTION = 'Find the greatest common divisor of given numbers.'
 
 
-def game():
+def names():
     counter = int(random.choice('235'))
     num_first = random.randrange(0, 101, counter)
     num_second = random.randrange(0, 101, counter)
     screen_question = (f'{num_first} {num_second}')
-    print(screen_question)
+    return screen_question
+def game():
     if num_first > num_second:
         num_max = num_first
     else:
