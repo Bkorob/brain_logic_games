@@ -18,3 +18,7 @@ https://semver.org/lang/ru/#spec-item-1
 ***brain-pogression***
 
 <a href="https://asciinema.org/a/ZcDxZQmI1osBdl8nxRrnIVzob" target="_blank"><img src="https://asciinema.org/a/ZcDxZQmI1osBdl8nxRrnIVzob.svg" /></a>
+
+***brain-prime***
+
+<a href="https://asciinema.org/a/bsIXRvsxbKLgTstcd5HuAPpuZ" target="_blank"><img src="https://asciinema.org/a/bsIXRvsxbKLgTstcd5HuAPpuZ.svg" /></a>
