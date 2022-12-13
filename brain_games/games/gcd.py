@@ -16,5 +16,3 @@ def game():
         if ((num_first % i == 0) and (num_second % i == 0)):
             screen_answer = i
             return str(screen_answer), screen_question
-
-print(game())
