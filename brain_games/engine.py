@@ -11,7 +11,7 @@ def game_engine(selected_game):
         user_answer = input('Your answer: ')
         if screen_answer != user_answer:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{screen_answer}'")
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             return
         if screen_answer == user_answer:
             result += 1
