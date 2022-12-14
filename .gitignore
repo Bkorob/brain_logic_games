@@ -3,4 +3,3 @@ i.md
 brain_games/scripts/__pycache__/
 .venv
 dist/
-pyproject.toml
