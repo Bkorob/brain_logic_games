@@ -27,7 +27,9 @@ BRAIN GAMES(Игры разума)
 *github*
 ***git@github.com:Bkorob/python-project-49.git***
 *(требует установки poetry)*
+
 ***make build*** - сборка дистрибутива.
+
 ***make package-install*** - установка пакета в систему.
 
 **Демонстрация**
