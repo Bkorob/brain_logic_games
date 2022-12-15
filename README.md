@@ -29,7 +29,7 @@
 
 **github**
 
-***git@github.com:Bkorob/python-project-49.git***
+***https://github.com/Bkorob/python-project-49***
 
 *(требует установки poetry)*
 
