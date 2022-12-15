@@ -1,11 +1,11 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Bkorob/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Bkorob/python-project-49/actions)   <a href="https://codeclimate.com/github/Bkorob/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/eee06181155c8e14ef34/maintainability" /></a>
 
-<h3>**Название проекта**</h3>
+<h3>Название проекта</h3>
 
 <h2>BRAIN GAMES(Игры разума)</h2>
 
-<h3>**Описание проекта**</h3>
+<h3>Описание проекта</h3>
 
 Проект представляет собой реализацию пяти логических игр для командной строки
 (названия игр так же являются командами для их вызова):
@@ -21,13 +21,13 @@
 5)brain-prime(система просит игрока определить, является ли выдаваемое число простым)
 
 
-<h3>**Правила**</h3>
+<h3>Правила</h3>
 
 Для выигрыша в любой из игр, пользователю нужно дать три правильных ответа. Ошибка равносильна проигрышу.
 
-<h3>**Установка**</h3>
+<h3>Установка</h3>
 
-*github*
+**github**
 
 ***git@github.com:Bkorob/python-project-49.git***
 
@@ -37,7 +37,7 @@
 
 ***make package-install*** - установка пакета в систему.
 
-<h3>**Демонстрация**</h3>
+<h3>Демонстрация</h3>
 
 ***brain-even***
 
