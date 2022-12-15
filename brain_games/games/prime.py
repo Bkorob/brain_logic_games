@@ -1,6 +1,9 @@
 import random
 
 
+QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def game():
     num = random.randint(2, 50)
     screen_question = num
