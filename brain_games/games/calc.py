@@ -15,6 +15,6 @@ def game():
         result = num_first + num_second
     else:
         result = num_first * num_second
-    screen_answer = str(result)
-    screen_question = f'{num_first} {oper} {num_second}'
-    return screen_answer, screen_question
+    screen_ans = str(result)
+    screen_q = f'{num_first} {oper} {num_second}'
+    return screen_ans, screen_q

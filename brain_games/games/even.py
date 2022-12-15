@@ -7,10 +7,10 @@ QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 def game():
     number = random.randint(0, 100)
     result = ''
-    screen_question = str(number)
+    screen_q = str(number)
     if number % 2 == 0:
         result = 'yes'
     else:
         result = 'no'
-    screen_answer = str(result)
-    return screen_answer, screen_question
+    screen_ans = str(result)
+    return screen_ans, screen_q
