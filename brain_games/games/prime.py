@@ -11,4 +11,5 @@ def game():
         if num % i == 0:
             screen_ans = 'no'
             return screen_ans, screen_q
+    screen_ans = 'yes'
     return screen_ans, screen_q
