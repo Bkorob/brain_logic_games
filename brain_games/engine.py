@@ -4,7 +4,7 @@ from brain_games.cli import welcome_user
 WIN_COUNTER = 3
 
 
-def game_engine(selected_game):
+def counting(selected_game):
     name = welcome_user()
     print(selected_game.QUESTION)
     counter = 0

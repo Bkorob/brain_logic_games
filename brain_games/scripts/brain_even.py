@@ -2,11 +2,12 @@
 
 
 from brain_games.games import even
-import brain_games.engine
+from brain_games.engine import counting
+
 
 
 def main():
-    brain_games.engine.game_engine(even)
+    counting(even)
 
 
 if __name__ == '__main__':
