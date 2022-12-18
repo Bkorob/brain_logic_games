@@ -2,6 +2,7 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "Logical console games"
+repository = "https://github.com/Bkorob/python-project-49"
 classifiers = [ "Programming Language :: Python :: 3" ]
 authors = ["Bkorob311 <bkorob311@gmail.com>"]
 readme = "README.md"

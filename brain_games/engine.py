@@ -1,11 +1,14 @@
 from brain_games.cli import welcome_user
 
 
+WIN_COUNTER = 3
+
+
 def game_engine(selected_game):
     name = welcome_user()
     print(selected_game.QUESTION)
-    result = 0
-    while result < 3:
+    counter = 0
+    while counter < WIN_COUNTER:
         screen_ans, screen_q = selected_game.game()
         print(f'Question: {screen_q}')
         user_ans = input('Your answer: ')
@@ -15,7 +18,7 @@ def game_engine(selected_game):
             print(f"Let's try again, {name}!")
             return
         if screen_ans == user_ans:
-            result += 1
+            counter += 1
             print('Correct!')
     print(f'Congratulations, {name}!')
     return
