@@ -21,4 +21,3 @@ def counting(selected_game):
             counter += 1
             print('Correct!')
     print(f'Congratulations, {name}!')
-
