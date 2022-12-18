@@ -9,7 +9,7 @@ def counting(selected_game):
     print(selected_game.QUESTION)
     counter = 0
     while counter < WIN_COUNTER:
-        screen_ans, screen_q = selected_game.game()
+        screen_ans, screen_q = selected_game.create_game()
         print(f'Question: {screen_q}')
         user_ans = input('Your answer: ')
         if screen_ans != user_ans:
@@ -17,8 +17,8 @@ def counting(selected_game):
                   f"Correct answer was '{screen_ans}'")
             print(f"Let's try again, {name}!")
             return
-        if screen_ans == user_ans:
+        else:
             counter += 1
             print('Correct!')
     print(f'Congratulations, {name}!')
-    return
+

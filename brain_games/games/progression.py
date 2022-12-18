@@ -4,7 +4,7 @@ import random
 QUESTION = "What number is missing in the progression?"
 
 
-def game():
+def create_game():
     counter = int(random.choice('235'))
     q_lst = list(range(2, 26, counter))
     lost_num = random.choice(q_lst)

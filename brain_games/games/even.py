@@ -4,7 +4,7 @@ import random
 QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def game():
+def create_game():
     number = random.randint(0, 100)
     result = ''
     screen_q = str(number)
