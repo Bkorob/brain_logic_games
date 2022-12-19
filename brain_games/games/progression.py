@@ -4,12 +4,16 @@ import random
 QUESTION = "What number is missing in the progression?"
 
 
-def create_game():
+def create_progression():
     counter = int(random.choice('235'))
-    q_lst = list(range(2, 26, counter))
-    lost_num = random.choice(q_lst)
-    lost_num_index = q_lst.index(lost_num)
-    q_lst[lost_num_index] = ".."
-    screen_q = str(q_lst).translate(str(q_lst).maketrans('', '', ",[]''"))
+    question_lst = list(range(2, 26, counter))
+    return question_lst
+
+def create_game():
+    question_lst = create_progression()
+    lost_num_index = random.randint(0, len(question_lst) + 1)
+    lost_num = question_lst[lost_num_index]
+    question_lst[lost_num_index] = ".."
+    screen_q = ' '.join(str(i) for i in question_lst)
     screen_ans = str(lost_num)
     return screen_ans, screen_q
