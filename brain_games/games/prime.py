@@ -16,4 +16,3 @@ def create_game():
             return screen_ans, screen_q
     screen_ans = 'yes'
     return screen_ans, screen_q
-print(create_game())
