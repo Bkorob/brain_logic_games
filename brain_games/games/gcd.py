@@ -11,7 +11,7 @@ def create_game():
     num_second = random.randrange(0, 101, counter)
     screen_q = (f'{num_first} {num_second}')
     num_max = max(num_first, num_second)
-    for i in range(1, num_max + 1):
+    for i in range(2, num_max + 1):
         if ((num_first % i == 0) and (num_second % i == 0)):
             screen_ans = i
             return str(screen_ans), screen_q
