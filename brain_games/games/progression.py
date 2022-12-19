@@ -11,7 +11,7 @@ def create_progression():
 
 def create_game():
     question_lst = create_progression()
-    lost_num_index = random.randint(0, len(question_lst) + 1)
+    lost_num_index = random.randint(0, len(question_lst) - 1)
     lost_num = question_lst[lost_num_index]
     question_lst[lost_num_index] = ".."
     screen_q = ' '.join(str(i) for i in question_lst)
