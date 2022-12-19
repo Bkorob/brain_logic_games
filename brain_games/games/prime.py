@@ -13,7 +13,7 @@ def is_prime(num):
             screen_answer = 'no'
             return screen_answer
     screen_answer = 'yes'
-    return screen_answer 
+    return screen_answer
 
 
 def create_game():
@@ -21,4 +21,3 @@ def create_game():
     screen_question = num
     screen_answer = is_prime(num)
     return screen_answer, screen_question
-print(create_game())
