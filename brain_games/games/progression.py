@@ -9,6 +9,7 @@ def create_progression():
     question_lst = list(range(2, 26, counter))
     return question_lst
 
+
 def create_game():
     question_lst = create_progression()
     lost_num_index = random.randint(0, len(question_lst) - 1)
