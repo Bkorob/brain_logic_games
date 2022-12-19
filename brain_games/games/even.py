@@ -15,6 +15,6 @@ def is_even(number):
 def create_game():
     number = random.randint(0, 100)
     result = is_even(number)
-    screen_q = number
-    screen_ans = str(result)
-    return screen_ans, screen_q
+    screen_question = number
+    screen_answer = str(result)
+    return screen_answer, screen_question

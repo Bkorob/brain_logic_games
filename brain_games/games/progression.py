@@ -15,6 +15,6 @@ def create_game():
     lost_num_index = random.randint(0, len(question_lst) - 1)
     lost_num = question_lst[lost_num_index]
     question_lst[lost_num_index] = ".."
-    screen_q = ' '.join(str(i) for i in question_lst)
-    screen_ans = str(lost_num)
-    return screen_ans, screen_q
+    screen_question = ' '.join(str(i) for i in question_lst)
+    screen_answer = str(lost_num)
+    return screen_answer, screen_question

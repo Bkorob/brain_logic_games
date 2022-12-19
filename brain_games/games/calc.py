@@ -20,6 +20,6 @@ def create_game():
     oper = random.choice('-+*')
     operation_result = give_operation(num_first, num_second, oper)
     # Не понял насчёт "такое определение переменных". А такое?
-    screen_ans = str(operation_result)
-    screen_q = f'{num_first} {oper} {num_second}'
-    return screen_ans, screen_q
+    screen_answer = str(operation_result)
+    screen_question = f'{num_first} {oper} {num_second}'
+    return screen_answer, screen_question
