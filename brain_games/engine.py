@@ -9,7 +9,7 @@ def run_game(selected_game):
     print(selected_game.RULE)
     counter = 0
     while counter < ROUNDS_TO_WIN:
-        correct_answer, question = selected_game.create_game()
+        correct_answer, question = selected_game.generate_round()
         print(f'Question: {question}')
         user_answer = input('Your answer: ')
         if correct_answer == user_answer:

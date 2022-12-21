@@ -6,7 +6,7 @@ import brain_games.engine
 
 
 def main():
-    brain_games.engine.counting(gcd)
+    brain_games.engine.run_game(gcd)
 
 
 if __name__ == '__main__':

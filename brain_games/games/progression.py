@@ -10,7 +10,7 @@ def create_progression():
     return question_lst
 
 
-def create_game():
+def generate_round():
     question_lst = create_progression()
     lost_num_index = random.randint(0, len(question_lst) - 1)
     lost_num = question_lst[lost_num_index]

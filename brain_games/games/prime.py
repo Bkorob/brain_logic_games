@@ -16,7 +16,7 @@ def is_prime(num):
     return correct_answer
 
 
-def create_game():
+def generate_round():
     num = random.randint(0, 50)
     question = num
     correct_answer = is_prime(num)

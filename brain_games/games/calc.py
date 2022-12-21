@@ -14,7 +14,7 @@ def give_operation(num1, num2, operator):
     return operation_result
 
 
-def create_game():
+def generate_round():
     num_first = random.randint(0, 10)
     num_second = random.randint(0, 10)
     operator = random.choice('-+*')

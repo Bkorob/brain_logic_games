@@ -12,7 +12,7 @@ def is_even(number):
     return result
 
 
-def create_game():
+def generate_round():
     number = random.randint(0, 100)
     result = is_even(number)
     question = number
