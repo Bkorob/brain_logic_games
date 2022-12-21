@@ -1,23 +1,23 @@
 from brain_games.cli import welcome_user
 
 
-WIN_COUNTER = 3
+ROUNDS_TO_WIN = 3
 
 
-def counting(selected_game):
+def run_game(selected_game):
     name = welcome_user()
-    print(selected_game.QUESTION)
+    print(selected_game.RULE)
     counter = 0
-    while counter < WIN_COUNTER:
-        screen_answer, screen_question = selected_game.create_game()
-        print(f'Question: {screen_question}')
+    while counter < ROUNDS_TO_WIN:
+        correct_answer, question = selected_game.create_game()
+        print(f'Question: {question}')
         user_answer = input('Your answer: ')
-        if screen_answer != user_answer:
-            print(f"'{user_answer}' is wrong answer ;(. "
-                  f"Correct answer was '{screen_answer}'")
-            print(f"Let's try again, {name}!")
-            return
-        else:
+        if correct_answer == user_answer:
             counter += 1
             print('Correct!')
+        else:
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'")
+            print(f"Let's try again, {name}!")
+            return
     print(f'Congratulations, {name}!')

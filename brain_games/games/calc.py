@@ -1,15 +1,15 @@
 import random
 
 
-QUESTION = "What is the result of the expression?"
+RULE = "What is the result of the expression?"
 
 
-def give_operation(num1, num2, oper):
-    if oper == '-':
+def give_operation(num1, num2, operator):
+    if operator == '-':
         operation_result = num1 - num2
-    elif oper == '+':
+    elif operator == '+':
         operation_result = num1 + num2
-    elif oper == '*':
+    elif operator == '*':
         operation_result = num1 * num2
     return operation_result
 
@@ -17,9 +17,8 @@ def give_operation(num1, num2, oper):
 def create_game():
     num_first = random.randint(0, 10)
     num_second = random.randint(0, 10)
-    oper = random.choice('-+*')
-    operation_result = give_operation(num_first, num_second, oper)
-    # Не понял насчёт "такое определение переменных". А такое?
-    screen_answer = str(operation_result)
-    screen_question = f'{num_first} {oper} {num_second}'
-    return screen_answer, screen_question
+    operator = random.choice('-+*')
+    operation_result = give_operation(num_first, num_second, operator)
+    correct_answer = str(operation_result)
+    question = f'{num_first} {operator} {num_second}'
+    return correct_answer, question

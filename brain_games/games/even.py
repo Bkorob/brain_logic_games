@@ -1,7 +1,7 @@
 import random
 
 
-QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(number):
@@ -15,6 +15,6 @@ def is_even(number):
 def create_game():
     number = random.randint(0, 100)
     result = is_even(number)
-    screen_question = number
-    screen_answer = str(result)
-    return screen_answer, screen_question
+    question = number
+    correct_answer = str(result)
+    return correct_answer, question
