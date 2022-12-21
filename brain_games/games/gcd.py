@@ -14,3 +14,6 @@ def generate_round():
         if ((num_first % i == 0) and (num_second % i == 0)):
             correct_answer = i
             return str(correct_answer), question
+        else:
+            correct_answer = 1
+            return str(correct_answer), question
