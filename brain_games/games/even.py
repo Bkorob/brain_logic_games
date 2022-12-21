@@ -5,16 +5,16 @@ RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(number):
-    if number % 2 == 0:
-        result = 'yes'
-    else:
-        result = 'no'
-    return result
+    return number % 2 == 0
+
 
 
 def generate_round():
     number = random.randint(0, 100)
     result = is_even(number)
+    if result == True:
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
     question = number
-    correct_answer = str(result)
-    return correct_answer, question
+    return str(correct_answer), question
