@@ -8,11 +8,10 @@ def is_even(number):
     return number % 2 == 0
 
 
-
 def generate_round():
     number = random.randint(0, 100)
     result = is_even(number)
-    if result == True:
+    if result is True:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
