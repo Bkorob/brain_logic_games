@@ -11,6 +11,8 @@ def generate_round():
     question = (f'{num_first} {num_second}')
     num_min = min(num_first, num_second)
     for i in range(num_min, 0, - 1):
+        correct_answer = 1
         if ((num_first % i == 0) and (num_second % i == 0)):
             correct_answer = i
-        return str(correct_answer), question
+            return str(correct_answer), question
+print(generate_round())
