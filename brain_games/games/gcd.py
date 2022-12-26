@@ -10,8 +10,8 @@ def generate_round():
     num_second = random.randrange(1, 101, counter)
     question = (f'{num_first} {num_second}')
     num_min = min(num_first, num_second)
-    for i in range(num_min, 0, - 1):
-        correct_answer = 1  # Эта переменная нужна, т.к. если if не выполняется,
+    for i in range(num_min, 0, -1):
+        # Эта переменная нужна, т.к. если if не выполняется,
         # без неё цикл падает в ошибку (комментарий уберу в следующем рефе).
         if ((num_first % i == 0) and (num_second % i == 0)):
             correct_answer = i
